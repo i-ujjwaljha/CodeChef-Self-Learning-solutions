@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int a;
+    float f;
+    cin>>a>>f;
+    
+    if((a%5==0) && (a<=f-0.5))
+        cout<<((f-a)-(0.5));
+    
+    else
+        cout<<f;
+    
+	return 0;
+}
