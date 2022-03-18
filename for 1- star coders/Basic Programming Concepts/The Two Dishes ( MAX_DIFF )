@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+#define ll long long int
+using namespace std;
+
+int main() 
+{
+	ll t;
+	cin>>t;
+	while(t--)
+	{
+		ll max,sum;
+		cin>>max>>sum;
+		
+		if(max>=sum)
+		  cout<<sum<<endl;
+		  
+		else
+		  cout<<((2*max)-sum)<<endl;
+	}
+	
+	return 0;
+}
