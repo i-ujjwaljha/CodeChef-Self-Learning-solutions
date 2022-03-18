@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+#define ll long long int
+using namespace std;
+
+int main() 
+{
+	ll t;
+	cin>>t;
+	while(t--)
+	{
+		ll n,x,imbd=0;
+		cin>>n>>x; //Here n: no. of movies , x: space available in hard disk
+		
+		while(n--)
+		{
+			ll s,r;
+			cin>>s>>r;// s: space req , r: rating of the movie
+			
+			if((s<=x) && (r>=imbd))
+			   imbd=r;
+		}
+		
+		cout<<imbd<<endl;
+	}
+	
+	return 0;
+}
